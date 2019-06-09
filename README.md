@@ -12,3 +12,6 @@ The recommendation list will combine the results from item-based collaborative f
 
 I used [MovieLens 20 M Datasets](https://grouplens.org/datasets/movielens/). This dataset describes 5-star rating from MovieLens, a movie recommendation service. It contains 20000263 ratings from 138493 users on 26744 movies. These data were created between 4/2015 and 10/2016. 
 
+## Models
+I started with basic and easy-implment KNN Item Based Collaborative Filtering models for my recommender system. To overcome the downsides of collaborative filtering (including cold-start, biased towards popular items, etc.), I used more complex Singular Vector Factorization (SVD)  Matrix Factorization. Eventually, combined the recommendation lists from the two methods. 
+
