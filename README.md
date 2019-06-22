@@ -8,8 +8,7 @@ if so, the engine will recommend movies based on users'rating history. Otherwise
 The recommendation list will combine the results from item-based collaborative filtering using KNN and the results from matrix factorization using ALS.   
 
 The process can be visualized in the following workflow chart:
-[embed]https://github.com/yzheng68/Movie-recommendation-engine-development/blob/master/workflow.pdf[/embed]
-
+![Image](https://github.com/yzheng68/Movie-recommendation-engine-development/blob/master/output-graph.gv.png)
 
 ## Data
 
