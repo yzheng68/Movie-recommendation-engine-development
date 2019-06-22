@@ -7,6 +7,8 @@ The recommendation engine will evaluate whether user has an account on file, nam
 if so, the engine will recommend movies based on users'rating history. Otherwise, the engine will ask user to input his/her facourite movie, then the engine will recommend similar movies using item-based collaborative filtering.
 The recommendation list will combine the results from item-based collaborative filtering using KNN and the results from matrix factorization using ALS.   
 
+The process can be visualized in the following workflow chart:
+[embed]https://github.com/yzheng68/Movie-recommendation-engine-development/blob/master/workflow.pdf[/embed]
 
 
 ## Data
