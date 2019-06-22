@@ -8,7 +8,7 @@ if so, the engine will recommend movies based on users'rating history. Otherwise
 The recommendation list will combine the results from item-based collaborative filtering using KNN and the results from matrix factorization using ALS.   
 
 The process can be visualized in the following workflow chart:
-![Image](https://github.com/yzheng68/Movie-recommendation-engine-development/blob/master/output-graph.gv.png)
+![Image](https://github.com/yzheng68/Movie-recommendation-engine-development/blob/master/pics/output-graph.gv.png)
 
 ## Data
 
@@ -23,8 +23,8 @@ I started with the basic and easy-to-implment KNN Item Based Collaborative Filte
   KNN is an easy-to-understand algorithm that can be used as a benchmark model for recommender system. In item-based collaborative filtering, KNN will use a pre-defined distance metric based on users' ratings to find similar items, and make recommendations using the top-k nearest neighbors. When user is new, a question will pop-up to ask about his/her favourite movie, then we will find movies that fuzzily match the movie input by the user, then distance metrics will be computed between the matched movies and the rest of movies, and top-k movies with the least distance will be returned. When user is not new, top 5 rated movies by the user will be extracted, then distance metrics will be computed between the top 5 rated movies and all the unrated movies by the user, and top-k movies with the least distance will be returned. 
   
   Let's see how it works in action:
-  ![Image](https://github.com/yzheng68/Movie-recommendation-engine-development/blob/master/Screen%20Shot%202019-06-22%20at%2010.27.23%20AM.png)
-  ![Image](https://github.com/yzheng68/Movie-recommendation-engine-development/blob/master/Screen%20Shot%202019-06-22%20at%2010.27.23%20AM.png)
+  ![Image](https://github.com/yzheng68/Movie-recommendation-engine-development/blob/master/pics/Screen%20Shot%202019-06-22%20at%2010.27.23%20AM.png)
+  ![Image](https://github.com/yzheng68/Movie-recommendation-engine-development/blob/master/pics/Screen%20Shot%202019-06-22%20at%2010.27.23%20AM.png)
   
  It looks like that KNN model works for general purpose, however, it has several limitation:
 
@@ -45,7 +45,7 @@ In the next section, we are going to build another recommendation engine using A
     
    The hyperparameters are tuned through a grid-search method. 
    
-   ![Image](https://github.com/yzheng68/Movie-recommendation-engine-development/blob/master/Screen%20Shot%202019-06-22%20at%2011.59.38%20AM.png)
+   ![Image](https://github.com/yzheng68/Movie-recommendation-engine-development/blob/master/pics/Screen%20Shot%202019-06-22%20at%2011.59.38%20AM.png)
    
    In the end, rank=20, regParam=0.05, and maxIter=10 will result in minumum RMSE (0.7986) in the validation dataset with out-of-bag error in the test dataset as . This set of hyperparameters will be used in the ALS model to predict movie ratings. 
    
