@@ -57,6 +57,12 @@ In the next section, we are going to build another recommendation engine using A
   
   Let's see how it works in action:
   
+  For new user:
+  ![Image](https://github.com/yzheng68/Movie-recommendation-engine-development/blob/master/pics/Screen%20Shot%202019-06-23%20at%2010.55.47%20AM.png)
+  
+  For existing user with userID 1:
+  
+  ![Image](https://github.com/yzheng68/Movie-recommendation-engine-development/blob/master/pics/Screen%20Shot%202019-06-23%20at%2010.54.15%20AM.png)
   
   
  # Future work 
